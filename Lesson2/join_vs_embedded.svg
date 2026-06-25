@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="100%" height="100%">
+  <!-- Style Definitions -->
+  <style>
+    .title { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: bold; fill: #111111; }
+    .label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; fill: #222222; }
+    .header-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 10px; font-weight: bold; fill: #111111; }
+    .cell-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; fill: #333333; }
+    .json-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; fill: #111111; }
+    .table-outline { stroke: #222222; stroke-width: 1.2; fill: #FAFAFA; rx: 4; }
+    .grid-line { stroke: #CCCCCC; stroke-width: 1; fill: none; }
+    .doc-bg { fill: #FAFAFA; stroke: #222222; stroke-width: 1.5; rx: 6; }
+    .nested-bg { fill: #EAEAEA; stroke: #555555; stroke-width: 1.2; rx: 4; }
+    .sep-line { stroke: #DDDDDD; stroke-width: 1.5; stroke-dasharray: 4; }
+    .join-arrow { stroke: #111111; stroke-width: 1.5; fill: none; stroke-dasharray: 2; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+
+  <!-- LEFT: SQL JOIN -->
+  <text x="30" y="35" class="title">SQL JOIN (Multiple Tables)</text>
+
+  <!-- Users Table -->
+  <rect x="30" y="55" width="100" height="70" class="table-outline" />
+  <text x="80" y="48" font-family="'Segoe UI'" font-size="10" font-weight="bold" fill="#555555" text-anchor="middle">Users Table</text>
+  <line x1="30" y1="75" x2="130" y2="75" stroke="#222222" stroke-width="1" />
+  <line x1="75" y1="55" x2="75" y2="125" class="grid-line" />
+  <text x="52" y="70" class="header-text" text-anchor="middle">id</text>
+  <text x="102" y="70" class="header-text" text-anchor="middle">name</text>
+  <text x="52" y="93" class="cell-text" text-anchor="middle">1</text>
+  <text x="102" y="93" class="cell-text" text-anchor="middle">"Dara"</text>
+  <text x="52" y="115" class="cell-text" text-anchor="middle">2</text>
+  <text x="102" y="115" class="cell-text" text-anchor="middle">"Sok"</text>
+
+  <!-- Addresses Table -->
+  <rect x="150" y="100" width="130" height="70" class="table-outline" />
+  <text x="215" y="93" font-family="'Segoe UI'" font-size="10" font-weight="bold" fill="#555555" text-anchor="middle">Addresses Table</text>
+  <line x1="150" y1="120" x2="280" y2="120" stroke="#222222" stroke-width="1" />
+  <line x1="190" y1="100" x2="190" y2="170" class="grid-line" />
+  <line x1="235" y1="100" x2="235" y2="170" class="grid-line" />
+  <text x="170" y="114" class="header-text" text-anchor="middle">user_id</text>
+  <text x="212" y="114" class="header-text" text-anchor="middle">city</text>
+  <text x="257" y="114" class="header-text" text-anchor="middle">id</text>
+  <text x="170" y="138" class="cell-text" text-anchor="middle">1</text>
+  <text x="212" y="138" class="cell-text" text-anchor="middle">"PP"</text>
+  <text x="257" y="138" class="cell-text" text-anchor="middle">10</text>
+  <text x="170" y="158" class="cell-text" text-anchor="middle">2</text>
+  <text x="212" y="158" class="cell-text" text-anchor="middle">"SR"</text>
+  <text x="257" y="158" class="cell-text" text-anchor="middle">11</text>
+
+  <!-- JOIN Connection Line -->
+  <path d="M 55 95 C 100 95, 100 138, 165 138" class="join-arrow" />
+  <polygon points="165,135 172,138 165,141" fill="#111111" />
+
+  <!-- Label -->
+  <text x="155" y="210" class="label" text-anchor="middle">Relationships via Reference (JOIN Query)</text>
+
+  <!-- MIDDLE SEPARATOR -->
+  <line x1="300" y1="30" x2="300" y2="220" class="sep-line" />
+
+  <!-- RIGHT: MongoDB Embedded Document -->
+  <text x="330" y="35" class="title">MongoDB (Embedded Document)</text>
+
+  <!-- Document Container -->
+  <rect x="330" y="55" width="240" height="115" class="doc-bg" />
+  <text x="345" y="75" class="json-text">{</text>
+  <text x="360" y="93" class="json-text">"name": "Dara",</text>
+  
+  <!-- Embedded Address Object -->
+  <rect x="360" y="102" width="180" height="48" class="nested-bg" />
+  <text x="370" y="117" class="json-text" style="font-weight: bold;">"address": <tspan font-weight="normal">{</tspan></text>
+  <text x="385" y="135" class="json-text">"city": "Phnom Penh"</text>
+  <text x="370" y="146" class="json-text">}</text>
+  
+  <text x="345" y="163" class="json-text">}</text>
+
+  <!-- Label -->
+  <text x="450" y="210" class="label" text-anchor="middle">Single Nested Document (No JOIN)</text>
+</svg>

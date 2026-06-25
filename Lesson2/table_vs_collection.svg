@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="100%">
+  <!-- Style Definitions -->
+  <style>
+    .title { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: bold; fill: #111111; }
+    .label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; fill: #222222; }
+    .header-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; font-weight: bold; fill: #111111; }
+    .cell-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; fill: #333333; }
+    .json-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; fill: #111111; }
+    .border-line { stroke: #222222; stroke-width: 1.5; fill: none; }
+    .grid-line { stroke: #CCCCCC; stroke-width: 1; fill: none; }
+    .doc-bg { fill: #FAFAFA; stroke: #222222; stroke-width: 1.5; rx: 6; }
+    .sep-line { stroke: #DDDDDD; stroke-width: 1.5; stroke-dasharray: 4; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+
+  <!-- LEFT: Table (SQL) -->
+  <text x="30" y="40" class="title">SQL Database (Table)</text>
+  
+  <!-- Table Container Grid -->
+  <rect x="30" y="60" width="220" height="150" class="border-line" rx="4" fill="#FAFAFA" />
+  
+  <!-- Header Row -->
+  <line x1="30" y1="95" x2="250" y2="95" class="border-line" stroke-width="1.2" />
+  <line x1="85" y1="60" x2="85" y2="210" class="grid-line" />
+  <line x1="175" y1="60" x2="175" y2="210" class="grid-line" />
+  
+  <!-- Column Headers -->
+  <text x="50" y="80" class="header-text" text-anchor="middle">id</text>
+  <text x="130" y="80" class="header-text" text-anchor="middle">name</text>
+  <text x="212" y="80" class="header-text" text-anchor="middle">age</text>
+  
+  <!-- Row 1 -->
+  <line x1="30" y1="135" x2="250" y2="135" class="grid-line" />
+  <text x="50" y="120" class="cell-text" text-anchor="middle">1</text>
+  <text x="130" y="120" class="cell-text" text-anchor="middle">"Dara"</text>
+  <text x="212" y="120" class="cell-text" text-anchor="middle">20</text>
+  
+  <!-- Row 2 -->
+  <text x="50" y="160" class="cell-text" text-anchor="middle">2</text>
+  <text x="130" y="160" class="cell-text" text-anchor="middle">"Sok"</text>
+  <text x="212" y="160" class="cell-text" text-anchor="middle">19</text>
+  
+  <!-- Table Label -->
+  <text x="140" y="240" class="label" text-anchor="middle">Structured Grid (Rows &amp; Columns)</text>
+
+  <!-- MIDDLE SEPARATOR -->
+  <line x1="300" y1="30" x2="300" y2="250" class="sep-line" />
+
+  <!-- RIGHT: Collection (MongoDB) -->
+  <text x="330" y="40" class="title">MongoDB (Collection)</text>
+
+  <!-- Document 1 -->
+  <rect x="330" y="60" width="240" height="75" class="doc-bg" />
+  <text x="345" y="80" class="json-text">{</text>
+  <text x="360" y="98" class="json-text">"_id": 1,</text>
+  <text x="360" y="114" class="json-text">"name": "Dara", "age": 20</text>
+  <text x="345" y="127" class="json-text">}</text>
+
+  <!-- Document 2 -->
+  <rect x="330" y="145" width="240" height="75" class="doc-bg" />
+  <text x="345" y="165" class="json-text">{</text>
+  <text x="360" y="183" class="json-text">"_id": 2,</text>
+  <text x="360" y="199" class="json-text">"name": "Sok", "age": 19</text>
+  <text x="345" y="212" class="json-text">}</text>
+
+  <!-- Collection Label -->
+  <text x="450" y="240" class="label" text-anchor="middle">Flexible Documents (JSON/BSON)</text>
+</svg>

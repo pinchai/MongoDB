@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="100%" height="100%">
+  <!-- Style Definitions -->
+  <style>
+    .title { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: bold; fill: #111111; }
+    .label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; fill: #222222; }
+    .sublabel { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 10px; fill: #555555; }
+    .code-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; fill: #333333; }
+    .byte-box { fill: #FAFAFA; stroke: #222222; stroke-width: 1.5; rx: 4; }
+    .byte-label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; font-weight: bold; fill: #111111; }
+    .sep-line { stroke: #DDDDDD; stroke-width: 1.5; stroke-dasharray: 4; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+
+  <!-- LEFT: SQL Primary Key -->
+  <text x="30" y="40" class="title">SQL Primary Key</text>
+
+  <!-- Table Representing PK -->
+  <rect x="30" y="60" width="220" height="110" stroke="#CCCCCC" stroke-width="1" fill="none" rx="4" />
+  <line x1="30" y1="85" x2="250" y2="85" stroke="#CCCCCC" stroke-width="1" />
+  <line x1="30" y1="110" x2="250" y2="110" stroke="#CCCCCC" stroke-width="1" />
+  <line x1="30" y1="138" x2="250" y2="138" stroke="#CCCCCC" stroke-width="1" />
+  <line x1="85" y1="60" x2="85" y2="170" stroke="#222222" stroke-width="1.5" />
+
+  <text x="57" y="75" font-family="'Segoe UI'" font-size="11" font-weight="bold" fill="#111111" text-anchor="middle">id (PK)</text>
+  <text x="167" y="75" font-family="'Segoe UI'" font-size="11" fill="#555555" text-anchor="middle">other columns...</text>
+
+  <!-- PK Values -->
+  <text x="57" y="102" class="code-text" text-anchor="middle" style="font-weight: bold;">1</text>
+  <text x="57" y="128" class="code-text" text-anchor="middle" style="font-weight: bold;">2</text>
+  <text x="57" y="158" class="code-text" text-anchor="middle" style="font-weight: bold;">3</text>
+
+  <!-- arrows/labels for auto-increment -->
+  <path d="M 90 98 L 105 98 M 90 124 L 105 124 M 90 154 L 105 154" stroke="#888888" stroke-width="1" fill="none" />
+  <text x="140" y="205" class="label" text-anchor="middle">Auto-incrementing Integer (1, 2, 3...)</text>
+
+  <!-- MIDDLE SEPARATOR -->
+  <line x1="300" y1="30" x2="300" y2="210" class="sep-line" />
+
+  <!-- RIGHT: MongoDB ObjectId -->
+  <text x="330" y="40" class="title">MongoDB ObjectId (12-byte HEX)</text>
+
+  <!-- ObjectId Hex String Representation -->
+  <rect x="330" y="60" width="240" height="30" stroke="#222222" stroke-width="1.5" fill="#FAFAFA" rx="4" />
+  <text x="450" y="80" class="code-text" text-anchor="middle" font-size="13" font-weight="bold">507f1f77bcf86cd799439011</text>
+
+  <!-- Breakdown Boxes -->
+  <!-- Timestamp -->
+  <rect x="330" y="110" width="80" height="50" class="byte-box" />
+  <text x="370" y="130" class="byte-label" text-anchor="middle">4 Bytes</text>
+  <text x="370" y="145" class="sublabel" text-anchor="middle">Timestamp</text>
+
+  <!-- Random -->
+  <rect x="415" y="110" width="80" height="50" class="byte-box" />
+  <text x="455" y="130" class="byte-label" text-anchor="middle">5 Bytes</text>
+  <text x="455" y="145" class="sublabel" text-anchor="middle">Random Value</text>
+
+  <!-- Counter -->
+  <rect x="500" y="110" width="70" height="50" class="byte-box" />
+  <text x="535" y="130" class="byte-label" text-anchor="middle">3 Bytes</text>
+  <text x="535" y="145" class="sublabel" text-anchor="middle">Counter</text>
+
+  <!-- Label -->
+  <text x="450" y="205" class="label" text-anchor="middle">Globally unique 12-byte BSON identifier</text>
+</svg>
