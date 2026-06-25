@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <!-- Style Definitions -->
+  <style>
+    .title { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: bold; fill: #111111; }
+    .label { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: bold; fill: #111111; }
+    .code-key { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; font-weight: bold; fill: #222222; }
+    .code-val { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; fill: #555555; }
+    .type-badge { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 10px; font-weight: bold; fill: #111111; }
+    .badge-bg { fill: #EAEAEA; stroke: #222222; stroke-width: 1; rx: 3; }
+    .doc-outline { fill: #FAFAFA; stroke: #222222; stroke-width: 1.5; rx: 6; }
+    .tree-line { stroke: #888888; stroke-width: 1.2; fill: none; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+
+  <!-- Document Title -->
+  <text x="30" y="35" class="title">MongoDB Document Structure &amp; Data Types</text>
+
+  <!-- Main Document Container -->
+  <rect x="30" y="55" width="540" height="280" class="doc-outline" />
+
+  <!-- Document braces -->
+  <text x="45" y="80" class="code-key" font-size="14">{</text>
+  <text x="45" y="320" class="code-key" font-size="14">}</text>
+
+  <!-- Fields with Trees and Type Badges -->
+  <!-- Field 1: _id -->
+  <line x1="70" y1="95" x2="90" y2="95" class="tree-line" />
+  <text x="95" y="99" class="code-key">_id : <tspan class="code-val">ObjectId("507f1f77bcf8...")</tspan></text>
+  <g transform="translate(390, 86)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">ObjectId</text>
+  </g>
+
+  <!-- Field 2: name -->
+  <line x1="70" y1="120" x2="90" y2="120" class="tree-line" />
+  <text x="95" y="124" class="code-key">name : <tspan class="code-val">"Dara"</tspan></text>
+  <g transform="translate(390, 111)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">String</text>
+  </g>
+
+  <!-- Field 3: age -->
+  <line x1="70" y1="145" x2="90" y2="145" class="tree-line" />
+  <text x="95" y="149" class="code-key">age : <tspan class="code-val">20</tspan></text>
+  <g transform="translate(390, 136)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">Number (Int)</text>
+  </g>
+
+  <!-- Field 4: isActive -->
+  <line x1="70" y1="170" x2="90" y2="170" class="tree-line" />
+  <text x="95" y="174" class="code-key">isActive : <tspan class="code-val">true</tspan></text>
+  <g transform="translate(390, 161)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">Boolean</text>
+  </g>
+
+  <!-- Field 5: birthday -->
+  <line x1="70" y1="195" x2="90" y2="195" class="tree-line" />
+  <text x="95" y="199" class="code-key">birthday : <tspan class="code-val">ISODate("2005-05-01")</tspan></text>
+  <g transform="translate(390, 186)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">Date</text>
+  </g>
+
+  <!-- Field 6: skills -->
+  <line x1="70" y1="220" x2="90" y2="220" class="tree-line" />
+  <text x="95" y="224" class="code-key">skills : <tspan class="code-val">["Python", "MongoDB"]</tspan></text>
+  <g transform="translate(390, 211)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">Array</text>
+  </g>
+
+  <!-- Field 7: address -->
+  <line x1="70" y1="245" x2="90" y2="245" class="tree-line" />
+  <text x="95" y="249" class="code-key">address : <tspan class="code-val">{ city: "PP", country: "KH" }</tspan></text>
+  <g transform="translate(390, 236)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">Object (Embed)</text>
+  </g>
+
+  <!-- Field 8: phone -->
+  <line x1="70" y1="270" x2="90" y2="270" class="tree-line" />
+  <text x="95" y="274" class="code-key">phone : <tspan class="code-val">null</tspan></text>
+  <g transform="translate(390, 261)">
+    <rect x="0" y="0" width="80" height="18" class="badge-bg" />
+    <text x="40" y="13" class="type-badge" text-anchor="middle">Null</text>
+  </g>
+
+  <!-- Vertical tree trunk line linking all fields -->
+  <line x1="70" y1="95" x2="70" y2="270" class="tree-line" />
+</svg>
