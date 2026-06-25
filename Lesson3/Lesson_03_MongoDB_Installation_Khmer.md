@@ -6,7 +6,7 @@
 - យល់អំពី MongoDB Compass
 - ប្រើប្រាស់ Mongosh
 - បង្កើត Database និង Collection
-- អនុវត្ត CRUD មូលដ្ឋាន
+- អនុវត្ត CRUD
 
 ---
 
