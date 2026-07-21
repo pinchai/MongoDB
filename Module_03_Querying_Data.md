@@ -21,7 +21,7 @@ use schoolDB
 ``` javascript
 db.students.insertMany([
 {
-    name: "Alice",
+    name: "dara",
     age: 20,
     score: 85,
     city: "Phnom Penh",
@@ -29,7 +29,7 @@ db.students.insertMany([
     graduated: false
 },
 {
-    name: "Bob",
+    name: "bora",
     age: 23,
     score: 92,
     city: "Siem Reap",
@@ -37,7 +37,7 @@ db.students.insertMany([
     graduated: true
 },
 {
-    name: "Charlie",
+    name: "sopheak",
     age: 19,
     score: 78,
     city: "Battambang",
@@ -45,7 +45,7 @@ db.students.insertMany([
     graduated: false
 },
 {
-    name: "David",
+    name: "vuthy",
     age: 22,
     score: 95,
     city: "Phnom Penh",
@@ -53,7 +53,7 @@ db.students.insertMany([
     graduated: true
 },
 {
-    name: "Emma",
+    name: "dana",
     age: 21,
     score: 88,
     city: "Kampot",
