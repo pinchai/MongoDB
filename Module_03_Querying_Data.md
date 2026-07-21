@@ -215,6 +215,5 @@ db.students.find({
   Logical                             `$and`, `$or`, `$not`, `$nor`
 
   Array                               `$all`, `$elemMatch`, `$size`
-
-  Element                             `$exists`, `$type`
+  
   -----------------------------------------------------------------------
