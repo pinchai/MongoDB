@@ -1,15 +1,5 @@
 # Module 1 – MongoDB Basics
 
-## 🎯 Learning Objectives
-
-By the end of this module, students will be able to:
-
-- Understand what MongoDB is.
-- Explain the difference between SQL and NoSQL databases.
-- Understand Databases, Collections, and Documents.
-- Create and visualize MongoDB data structure.
-- Know when MongoDB is a good choice.
-
 ---
 
 # 1. What is MongoDB?
