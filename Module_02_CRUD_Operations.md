@@ -27,6 +27,38 @@ CRUD stands for the four basic database operations.
 
 In this lesson, we focus on **Create** and **Read**.
 
+## Step 1: Create and Select a Database
+
+Before performing any CRUD operations, create (or switch to) a database.
+
+```javascript
+use schoolDB
+```
+
+Verify the current database:
+
+```javascript
+db
+```
+
+> **Note:** MongoDB creates the database only after the first document is inserted.
+
+## Step 2: Create a Collection
+
+You can create a collection manually before inserting data.
+
+```javascript
+db.createCollection("students")
+```
+
+Verify the collection:
+
+```javascript
+show collections
+```
+
+After creating the collection, you can begin CRUD operations.
+
 ## Sample Collection
 
 ``` json
