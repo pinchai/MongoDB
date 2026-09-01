@@ -24,7 +24,6 @@ The system should allow users to:
 - Create courses
 - Enroll students in courses
 - Search for students and courses
-- Update information
 - Query data using MongoDB Query Language (MQL)
 
 ### Database Name
