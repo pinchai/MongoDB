@@ -65,16 +65,17 @@ db.students.insertMany([
 
 ## Comparison Operators
 
-  Operator   Description
-  ---------- ---------------------------
-  `$eq`      Equal
-  `$ne`      Not Equal
-  `$gt`      Greater Than
-  `$gte`     Greater Than or Equal
-  `$lt`      Less Than
-  `$lte`     Less Than or Equal
-  `$in`      Match any value in a list
-  `$nin`     Not in a list
+| Operator | Meaning                              | Khmer                | Example                       |
+| -------- | ------------------------------------ | -------------------- | ----------------------------- |
+| `$eq`    | Equal to                             | ស្មើនឹង              | `age = 20`                    |
+| `$ne`    | Not equal to                         | មិនស្មើនឹង           | `city ≠ Phnom Penh`           |
+| `$gt`    | Greater than                         | ធំជាង                | `score > 90`                  |
+| `$gte`   | Greater than or equal                | ធំជាង ឬស្មើ          | `score >= 88`                 |
+| `$lt`    | Less than                            | តូចជាង               | `age < 21`                    |
+| `$lte`   | Less than or equal                   | តូចជាង ឬស្មើ         | `age <= 20`                   |
+| `$in`    | Matches any value in an array        | ស្ថិតនៅក្នុងបញ្ជី    | `city = Phnom Penh OR Kampot` |
+| `$nin`   | Does not match any value in an array | មិនស្ថិតនៅក្នុងបញ្ជី | `city ≠ Phnom Penh`           |
+
 
 ### Examples
 
