@@ -92,12 +92,13 @@ db.students.find({ city: { $nin: ["Phnom Penh"] } })
 
 ## Logical Operators
 
-  Operator   Description
-  ---------- ------------------------------
-  `$and`     All conditions must match
-  `$or`      Any condition can match
-  `$not`     Negates a condition
-  `$nor`     None of the conditions match
+| Operator | Meaning                             | Khmer                          |
+| -------- | ----------------------------------- | ------------------------------ |
+| `$and`   | All conditions must be true         | លក្ខខណ្ឌទាំងអស់ត្រូវតែពិត      |
+| `$or`    | At least one condition must be true | យ៉ាងហោចណាស់មួយលក្ខខណ្ឌត្រូវពិត |
+| `$not`   | Negates a condition                 | បដិសេធលក្ខខណ្ឌ                 |
+| `$nor`   | None of the conditions can be true  | គ្មានលក្ខខណ្ឌណាមួយត្រូវពិត     |
+
 
 ``` javascript
 db.students.find({
